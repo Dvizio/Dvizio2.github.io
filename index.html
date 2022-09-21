@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulir Pendaftaran</title>
+</head>
+
+<body id="body">
+    <div class="main-content">
+        
+        <form class="form-basic" name="formPendaftaran" action="login.html" method="post" onsubmit="return validateForm()">
+            <div class="form-title-row">
+                <h1>Formulir Pendaftaran</h1>
+                <h2>Pasien Baru</h2>
+                <h2>RSUD AROSUKA</h2>
+            </div>
+            <hr>
+            </br>
+            <h2>Data Pasien</h2>
+            <br>
+        
+            <div class="form-row">
+                <label style="margin: auto;">
+                <span>NAMA PASIEN</span>
+                <input type="text" name="name">
+                </label>
+            </div>
+      
+            <div class="form-row">
+                <label>
+                <span>TEMPAT LAHIR</span>
+                <input type="text" name="tempatlahir">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label for="birthday"><span>TANGGAL LAHIR</span></label>
+                <input type="date" id="birthday" name="birthday">
+            </div>
+            
+            <div class="form-row">
+            <label>
+                <span>ALAMAT</span>
+                <input type="text" name="Alamat">
+            </label>
+            </div>
+            <div class="form-row">
+                <label>
+                <span>KELURAHAN</span>
+                <input type="text" name="kelurahan">
+                </label>
+            </div>
+            
+            <div class="form-row">
+                <label>
+                <span>KECAMATAN</span>
+                <input type="text" name="kecamatan">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                <span>KODE POS</span>
+                <input type="text" name="KODEPOS">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                <span>NOMOR TELEPON</span>
+                <input type="tel" name="phone">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                <span>PENDIDIKAN TERAKHIR</span>
+                <input type="text" name="Pendidikanterakhir">
+                </label>
+            </div>
+
+            
+
+            <div class="form-row">
+                <label><span>JENIS KELAMIN</span></label>
+                <div class="form-radio-buttons" style="text-align: left;">
+                <div>
+                    <label>
+                    <input type="radio" value="Perempuan" name="radio">
+                    <span>Perempuan</span>
+                </label>
+                </div>
+        
+                <div>
+                    <label>
+                    <input type="radio" value="Laki-Laki" name="radio">
+                    <span>Laki-Laki</span>
+                    </label>
+                </div>
+        
+                </div>
+            </div>
+            <hr>
+            <br>
+            <h2>Penanggung Jawab Pasien</h2>
+            <div class="form-row">
+                <label><span>HUBUNGAN DENGAN PASIEN</span></label>
+                <div class="form-radio-buttons" style="text-align: left;">
+                <div>
+                    <label>
+                    <input type="radio" value="Perempuan" name="radio">
+                    <span>Suami/Istri</span>
+                </label>
+                </div>
+        
+                <div>
+                    <label>
+                    <input type="radio" value="Laki-Laki" name="radio">
+                    <span>Keluarga</span>
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                    <input type="radio" value="Laki-Laki" name="radio">
+                    <span>Lain-lain</span>
+                    </label>
+                </div>
+        
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label>
+                <span>NAMA PENANGGUNG JAWAB</span>
+                <input type="text" name="namap">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                <span>PENDIDIKAN TERAKHIR</span>
+                <input type="text" name="Pendidikanterakhir">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                <span>PEKERJAAN</span>
+                <input type="text" name="kerjapenanggung">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                <span>NOMOR TELP</span>
+                <input type="text" name="nomr">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label><span>EMAIL PENANGGUNG JAWAB</span></label>
+                <input type="email" name="email" placeholder="Email Aktif" class="form-control">
+            </div>
+           
+            
+            </br>
+            </br>
+            </br>
+
+            <div class="form-row" style="text-align: right; width: 540px; margin-left: auto; padding: 0px;">
+                <label>
+                <span style="margin-right: 0px; padding-right: 10px; text-align: right;">Surabaya, </span>
+                <input type="date" name="ttd" style="width: 150px; margin-left: 0px;">
+                </label>
+            </div>
+            
+            </br>
+            </br>
+            <div class="row" style="column-gap: 180px;">
+                <div class="column">
+                    <div class="row" style="display: block;">
+                        <label for="myfile" style="display: block;">Tanda Tangan</label>
+                        <input type="file" id="myfile" name="myfile" style="width: 205px; margin-top: 20px;">
+                    </div>
+                </div>
+                <div class="column" style="margin-right: auto; position: relative;">
+                    <div class="row" style="display: block;">
+                        <label for="myfile" style="display: block;">Foto KTP/KK</label>
+                        <input type="file" id="myfile" name="myfile" style="width: 205px; margin-top: 20px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <button type="submit">Daftar</button>
+            </div>
+        
+            </form>
+        
+        </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+        function validateForm() {
+            
+            if (document.forms["formPendaftaran"]["email"].value == "") {
+                alert("Email masih kosong");
+                document.forms["formPendaftaran"]["email"].focus();
+                return false;
+            }
+        }
+    </script>
+</body>
